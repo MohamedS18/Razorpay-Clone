@@ -1,0 +1,229 @@
+:root {
+  --primary-color: rgb(65, 65, 255);
+}
+
+.nav {
+  padding: 0rem 3rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__container {
+  padding: 0rem 7rem;
+}
+
+.nav__options {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.nav--features {
+  font-size: 1rem;
+  margin: 0rem 0.6rem;
+}
+
+.nav__options--logo {
+  padding-bottom: 0.5rem;
+  height: 1.8rem;
+}
+
+.nav__login {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.nav__login--support {
+  align-items: center;
+  display: flex;
+}
+
+.nav__login--country {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.nav__login--supportlogo {
+  height: 1.8rem;
+}
+
+.nav__login--countrylogo {
+  border-radius: 0.2rem;
+  margin-right: 0.21rem;
+  height: 1.5rem;
+}
+
+.nav__login--loginbutton {
+  font-size: 0.8rem;
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border-color: var(--primary-color);
+}
+
+.nav__login--rightarrow {
+  fill: white;
+  padding-left: 0.5rem;
+}
+
+.nav__login--signupbutton {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.clients {
+  display: flex;
+  height: 30rem;
+}
+
+.clients__nav--button {
+  width: 2rem;
+}
+
+.clients__nav--left {
+  width: 8rem;
+  padding-right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.clients__nav--right {
+  width: 8rem;
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.clients__content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.clients__ad {
+  padding-top: 5rem;
+}
+
+.clients__ad--primarytext {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 2.6rem;
+}
+.clients__ad--secondarytext {
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+
+.clients__ad--buttoncontainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.clients__ad--signupbutton {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  color: white;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.clients__ad--features {
+  padding: 1rem 0rem;
+}
+
+.clients__details {
+  position: relative;
+}
+
+.clients__details--background {
+  height: 30rem;
+}
+
+.clients__details--profile {
+  position: absolute;
+  top: 3rem;
+  right: 20rem;
+  height: 27rem;
+}
+
+.clients__details--catalog {
+  position: absolute;
+  top: 4.9rem;
+  right: 5.5rem;
+  height: 25rem;
+}
+
+.slideshow {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  animation: slideLeft 9s infinite;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  40% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-100%);
+  }
+
+  90% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.product, .product__ad{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.products__container {
+  height: 3rem;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  margin: 0rem 10rem;
+  border-radius: 0.3rem;
+  background-color: red;
+}
+
+.product__label {
+  padding-left: 0.5rem;
+}
