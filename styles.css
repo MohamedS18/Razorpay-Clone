@@ -419,7 +419,7 @@ footer {
 }
 
 .features {
-  height: 100vh;
+  height: 50rem;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0rem 4rem;
@@ -448,23 +448,52 @@ footer {
   justify-content: space-between;
 }
 
+.feature__tile--image {
+  width: 100%;
+}
 .feature__image--container {
-  width: 18rem;
-  height: 20rem;
+  width: 100%;
   border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
 .feature__tile {
+  background-image: url(assets/catalog/accept_payments-1.avif);
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
   width: 18rem;
   border-radius: 0.5rem;
-  height: 30rem;
+  height: 25rem;
   box-shadow: rgba(25, 40, 57, 0.15) 0px 8px 16px 0px;
 }
 
+.feature__tile--gap {
+  transition: 0.3s ease;
+  height: 70%;
+}
+
+.feature__tile--signupbutton {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  color: white;
+  padding: 0.4rem 0.4rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.feature__tile--knowmore {
+  color: var(--primary-color);
+}
+
 .feature__tile--details {
+  background-color: white;
+  padding-top: 1rem;
   padding-left: 1rem;
   display: flex;
-  height: 10rem;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -476,7 +505,25 @@ footer {
 }
 
 .feature__tile--description {
+  transition: display 1s ease-in-out;
   color: grey;
+}
+
+.feature__tile--hover {
+  display: none;
+}
+
+.feature__tile:hover {
+  .feature__tile--gap {
+    height: 60%;
+  }
+
+  .feature__tile--hover {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem 0rem;
+  }
 }
 
 .footer {
