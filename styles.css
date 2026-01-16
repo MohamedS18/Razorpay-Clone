@@ -19,16 +19,16 @@ footer {
 }
 
 .nav {
-  height: 5rem;
-  display: flex;
-  justify-content: space-around;
-}
-
-.nav__container {
   width: 100%;
   z-index: 1;
   position: fixed;
   background-color: white;
+}
+
+.nav__container {
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav__options {
@@ -50,12 +50,12 @@ footer {
   border-bottom: solid 0.3rem var(--primary-color);
   cursor: pointer;
   color: var(--light-primary-color);
-  .nav__payments--hovercontainer {
+  .nav__payments--panel {
     display: block;
   }
 }
 
-.nav__payments--hovercontainer {
+.nav__payments--panel {
   transition: opacity 0.5s ease;
   position: absolute;
   display: none;
@@ -846,6 +846,3 @@ footer {
 .footer__copyright--knowmore {
   cursor: pointer;
 }
-/* .dummy {
-  height: 30rem;
-} */
